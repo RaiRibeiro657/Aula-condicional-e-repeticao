@@ -8,7 +8,8 @@ int main() {
     printf("Sistema de Login\n");
 
     do {
-        printf("Digite a senha de 4 digitos: ");  
+        printf("Digite a senha de 4 digitos: ");
+        scanf("%d", &senha_digitada);  
 
         if (senha_digitada != senha_certa) {
             printf("Senha incorreta! Tente denovo.\n"); 
