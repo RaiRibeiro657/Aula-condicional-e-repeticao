@@ -1,21 +1,26 @@
-int main()
+#include <stdio.h>
+
+int tabuada()
 {
     int numero;
 
-    printf("Digite um numero de 1 a 10:");
-    scanf("%d, &numero");
+    while (1)
+    {
+        printf("Digite um numero de 1 a 10:");
+        scanf("%d, &numero");
 
-    if (numero >= 1 && numero <= 10)
-    {
-        printf("Você digitou o número: %d/n", numero);
+        if (numero >= 1 && numero <= 10)
+        {
+            break;
+        }
+        printf("Número inválido! Tente novamente. /n");
     }
-    else
-    {
-        printf("Número inválido! Por Favor, insira um número entre 1 a 10 ");
-    }
+
+    // imprime a tabuadado número válido
     printf("Tabuada de %d/n, numero");
     for (int i = 1; i <= 10; i++)
     {
         printf("%d x %d = %d", numero, i, numero * i);
     }
+    return 0;
 }
