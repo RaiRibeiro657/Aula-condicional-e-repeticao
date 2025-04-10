@@ -2,6 +2,8 @@
 
 Este repositório contém **três programas** simples em C++
 
+---
+
 ## Um menu interativo: 
 
 Um progrma onde o usuário pode escolher entre:
